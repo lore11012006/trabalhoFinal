@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Forca</h1>
+        <div id="setup" class="setup">
+            <input type="text" id="word-input" class="word-input" placeholder="Digite uma palavra" maxlength="20" />
+            <button id="start-game-button" class="start-game-button">Começar Jogo</button>
+        </div>
+        <div id="game" class="game" style="display: none;">
+            <div id="word-display" class="word-display">_ _ _ _ _</div>
+            <div id="attempts" class="attempts">Tentativas restantes: 6</div>
+            <div id="letters-tried" class="letters-tried">Letras tentadas: </div>
+            <input type="text" id="letter-input" class="letter-input" maxlength="1" />
+            <button id="submit-button" class="submit-button">Tentar</button>
+            <button id="reset-button" class="reset-button">Reiniciar Jogo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
